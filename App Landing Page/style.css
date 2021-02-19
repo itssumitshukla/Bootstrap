@@ -4,11 +4,11 @@
 
 
 .home {
-  height: auto;
+  height: 550;
   background-image: url(IMG/background.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-
+  padding: 20px 0 20px 0;
 }
 
 .yo {
