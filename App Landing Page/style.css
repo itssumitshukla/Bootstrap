@@ -1,11 +1,18 @@
 /* Style */
 
+/* Add media queries later */
+
+
 .home {
   height: auto;
   background-image: url(IMG/background.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
 
+}
+
+.yo {
+  background-color: rgb(207, 228, 248);
 }
 
 #img1 {
