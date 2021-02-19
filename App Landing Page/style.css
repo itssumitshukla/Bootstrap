@@ -1,5 +1,14 @@
 /* Style */
 
+.home {
+  height: auto;
+  background-image: url(IMG/background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
 #img1 {
   max-height: 500px;
+  min-width: 100px
 }
