@@ -19,3 +19,8 @@
   max-height: 500px;
   min-width: 100px
 }
+
+.clients img {
+  max-height: 100px;
+  min-width: 100px
+}
