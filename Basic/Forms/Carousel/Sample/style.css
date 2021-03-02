@@ -18,3 +18,14 @@ img {
   width: 100% !important;
   /*min-height: 500px;*/
 }
+
+@media(min-width: 992px) {
+  .col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33%;
+  }
+}
+
+.divid {
+  margin: 5rem 0;
+}
