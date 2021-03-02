@@ -29,3 +29,7 @@ img {
 .divid {
   margin: 5rem 0;
 }
+
+svg {
+  vertical-align: middle;
+}
