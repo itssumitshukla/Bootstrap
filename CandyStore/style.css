@@ -36,3 +36,16 @@ body {
     font-size: 3rem;
   }
 }
+
+.blurb h2 {
+  color: #EA1C2C;
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+
+.blurb p {
+  color: #f498b8;
+  font-weight: 100;
+  font-size: 1.125rem;
+  line-height: 2;
+}
