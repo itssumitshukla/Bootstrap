@@ -24,6 +24,21 @@ body {
   margin-left: auto;
 }
 
+.btn-primary {
+  background-color: #36b3a8;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+}
+
+#showcase {
+  background-image: url("images/main.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 750px;
+}
+
+/* Media Query */
+
 @media(max-width: 768px) {
   .navbar {
     background: #1f1f1f;
@@ -31,5 +46,13 @@ body {
 
   .nav-link:hover {
     border-bottom: none;
+  }
+
+  #showcase {
+    min-height: 500px;
+  }
+
+  h1 {
+    font-size: 4rem;
   }
 }
