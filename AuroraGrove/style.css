@@ -31,10 +31,10 @@ body {
 }
 
 #showcase {
-  background-image: url("images/main.jpeg");
+  /* background-image: url("images/main.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 750px;
+  min-height: 750px; */
 }
 
 /* Media Query */
