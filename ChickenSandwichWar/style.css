@@ -8,12 +8,14 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  height: 100px; /* remove this later */
 }
 
 
 /* Media */
-@media (min-width: 576px) {
+@media (max-width: 989px) {
   .card {
     display: block;
+    margin: 10px;
   }
 }
