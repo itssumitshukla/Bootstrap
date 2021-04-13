@@ -15,14 +15,14 @@ let yyo = 'mcDonalds';
 //
 let modal = document.querySelectorAll('.card');
 let myArray = Array.from(modal)
-console.log(typeof(myArray))
 
 myArray.forEach(e=>{
-  console.log(e)
   e.addEventListener('click',(tt)=>{
-    let inn = tt.target.alt;
+    let inn = tt.target.innerHTML;
+    console.log(inn)
     if(inn == yyo){
       console.log('BRUH THIS WORK')
     }
   })
 })
+
