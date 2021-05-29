@@ -11,8 +11,16 @@ body {
   height: 100px; /* remove this later */
 }
 
-img{
-  margin: 0 auto;
+img {
+  float: left;
+  width:  300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.tt {
+  height: 200px;
+  width: 200px;
 }
 
 /* Media */
