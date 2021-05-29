@@ -11,6 +11,9 @@ body {
   height: 100px; /* remove this later */
 }
 
+img{
+  margin: 0 auto;
+}
 
 /* Media */
 /* @media (max-width: 990px) {
