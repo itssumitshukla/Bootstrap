@@ -28,6 +28,10 @@ img {
   color: rgb(100, 30, 30);
 }
 
+#myChart {
+  background: linear-gradient(45deg, rgb(93, 211, 247), rgb(60, 255, 197));
+}
+
 /* Media */
 /* @media (max-width: 990px) {
   .card {
