@@ -1,7 +1,7 @@
 //Data
 let chartThis = {
   "Popeyes":{
-     "Salty":"1",
+     "Salty":"5",
      "Sweet":"1",
      "Sour":"1",
      "Bitter":"1",
@@ -12,7 +12,7 @@ let chartThis = {
      "Visual Appeal":"1"
   },
   "ChickFila":{
-     "Salty":"1",
+     "Salty":"3",
      "Sweet":"1",
      "Sour":"1",
      "Bitter":"1",
@@ -23,7 +23,7 @@ let chartThis = {
      "Visual Appeal":"1"
   },
   "McDonalds":{
-     "Salty":"1",
+     "Salty":"4",
      "Sweet":"1",
      "Sour":"1",
      "Bitter":"1",
@@ -34,7 +34,7 @@ let chartThis = {
      "Visual Appeal":"1"
   },
   "Wendys":{
-     "Salty":"1",
+     "Salty":"3",
      "Sweet":"1",
      "Sour":"1",
      "Bitter":"1",
@@ -69,36 +69,44 @@ let chartThis = {
 };
 
 //Initalize
-let popeyes = document.getElementById('popeyes');
-popeyes.addEventListener('click', function(){
-  console.log('NICE')
-})
+let popeyes = document.querySelector('#btnpopeyes');
+
+
 
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['MouthFeel', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Salty', 'Sweet', 'Sour', 'Bitter', 'Umami', 'Odor','Sound','MouthFeel','Visual Appeal'],
         datasets: [{
             label: 'Chimkin Taste Chart',
             data: [1, 2, 3, 4, 5],
-            backgroundColor: [
-                'red',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'blue',
-                'red',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
+            backgroundColor: ['red'],
+            borderColor: ['black'],
             borderWidth: 2
         }]
     }
 });
+
+//Event listner
+popeyes.addEventListener('click', function(){
+  let yo = myChart.config.data.datasets[0].data;
+  console.log(yo);
+  for(let en in chartThis) {
+    if(en==='Popeyes'){
+      console.log('This from inside');
+      
+    }
+    for(let jn in chartThis[en]) {
+      if(en=== 'Popeyes' && jn==='Salty'){
+        console.log('YEAH BOI');
+        console.log(`obj.${jn} = ${chartThis[en][jn]}`);
+        break;
+      }
+      
+      break;
+    }
+  }
+  //console.log(yo)
+  //console.log(yo)
+})

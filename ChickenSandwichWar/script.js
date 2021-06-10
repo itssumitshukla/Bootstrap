@@ -10,19 +10,19 @@
   };
 })();
 
-let yyo = 'mcDonalds';
+// // let yyo = 'mcDonalds';
 
-//
-let modal = document.querySelectorAll('.card');
-let myArray = Array.from(modal)
+// // //
+// let modal = document.querySelectorAll('.card');
+// let myArray = Array.from(modal)
 
-myArray.forEach(e=>{
-  e.addEventListener('click',(tt)=>{
-    let inn = tt.target.innerHTML;
-    console.log(inn)
-    if(inn == yyo){
-      console.log('BRUH THIS WORK')
-    }
-  })
-})
+// myArray.forEach(e=>{
+//   e.addEventListener('click',(tt)=>{
+//     let inn = tt.target.innerHTML;
+//     console.log(inn)
+//     if(inn == yyo){
+//       console.log('BRUH THIS WORK')
+//     }
+//   })
+// })
 
