@@ -1,4 +1,4 @@
-
+//Data
 let chartThis = {
   "Popeyes":{
      "Salty":"1",
@@ -67,6 +67,12 @@ let chartThis = {
      "Visual Appeal":"1"
   }
 };
+
+//Initalize
+let popeyes = document.getElementById('popeyes');
+popeyes.addEventListener('click', function(){
+  console.log('NICE')
+})
 
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
