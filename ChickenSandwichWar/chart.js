@@ -70,9 +70,18 @@ let chartThis = {
 
 //Initalize
 let popeyes = document.querySelector('#btnpopeyes');
+let chickfila = document.querySelector('#btnchickfila');
+let mcdonalds = document.querySelector('#btnmcdonalds');
+let wendys = document.querySelector('#btnwendys');
+let kfc = document.querySelector('#btnkfc');
+let burgerking = document.querySelector('#btnburgerking');
 
-let ttest = [3,5,1,3,5,2,1,5,3];
-let rrr = [1,5,1,4,2,1,4,5,3];
+let pop = [1,5,1,4,2,1,4,5,3];
+let chkfla = [5,5,2,5,5,5,3,5,5];
+let mcd = [2,1,1,3,5,2,2,1,1];
+let wend = [5,5,2,5,5,5,3,5,5];
+let kcfc = [5,5,2,5,5,5,3,5,5];
+let bk = [5,5,2,5,5,5,3,5,5];
 
 
 var ctx = document.getElementById('myChart').getContext('2d');
@@ -82,7 +91,7 @@ var myChart = new Chart(ctx, {
         labels: ['Salty', 'Sweet', 'Sour', 'Bitter', 'Umami', 'Odor','Sound','MouthFeel','Visual Appeal'],
         datasets: [{
             label: 'Chimkin Taste Chart',
-            data: ttest,
+            data: [],
             backgroundColor: ['red'],
             borderColor: ['black'],
             borderWidth: 2
@@ -92,25 +101,28 @@ var myChart = new Chart(ctx, {
 
 //Event listner
 popeyes.addEventListener('click', function(){
-  let yo = myChart.config.data.datasets[0].data;
-  console.log(yo);
-  myChart.config.data.datasets[0].data = rrr;
+  myChart.config.data.datasets[0].data = pop;
   myChart.update();
-  // for(let en in chartThis) {
-  //   if(en==='Popeyes'){
-  //     console.log('This from inside');
-      
-  //   }
-  //   for(let jn in chartThis[en]) {
-  //     if(en=== 'Popeyes' && jn==='Salty'){
-  //       console.log('YEAH BOI');
-  //       console.log(`obj.${jn} = ${chartThis[en][jn]}`);
-  //       break;
-  //     }
-      
-  //     break;
-  //   }
-  //}
-  //console.log(yo)
-  //console.log(yo)
-})
+});
+
+chickfila.addEventListener('click', function(){
+  myChart.config.data.datasets[0].data = chkfla;
+  myChart.update();
+});
+
+mcdonalds.addEventListener('click', function(){
+  myChart.config.data.datasets[0].data = mcd;
+  myChart.update();
+});
+wendys.addEventListener('click', function(){
+  myChart.config.data.datasets[0].data = pop;
+  myChart.update();
+});
+kfc.addEventListener('click', function(){
+  myChart.config.data.datasets[0].data = chkfla;
+  myChart.update();
+});
+burgerking.addEventListener('click', function(){
+  myChart.config.data.datasets[0].data = mcd;
+  myChart.update();
+});
