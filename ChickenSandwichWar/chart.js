@@ -94,7 +94,8 @@ var myChart = new Chart(ctx, {
 popeyes.addEventListener('click', function(){
   let yo = myChart.config.data.datasets[0].data;
   console.log(yo);
-  yo.push(rrr)
+  myChart.config.data.datasets[0].data = rrr;
+  myChart.update();
   // for(let en in chartThis) {
   //   if(en==='Popeyes'){
   //     console.log('This from inside');
