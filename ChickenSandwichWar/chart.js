@@ -71,6 +71,8 @@ let chartThis = {
 //Initalize
 let popeyes = document.querySelector('#btnpopeyes');
 
+let ttest = [3,5,1,3,5,2,1,5,3];
+let rrr = [1,5,1,4,2,1,4,5,3];
 
 
 var ctx = document.getElementById('myChart').getContext('2d');
@@ -80,7 +82,7 @@ var myChart = new Chart(ctx, {
         labels: ['Salty', 'Sweet', 'Sour', 'Bitter', 'Umami', 'Odor','Sound','MouthFeel','Visual Appeal'],
         datasets: [{
             label: 'Chimkin Taste Chart',
-            data: [1, 2, 3, 4, 5],
+            data: ttest,
             backgroundColor: ['red'],
             borderColor: ['black'],
             borderWidth: 2
@@ -92,21 +94,22 @@ var myChart = new Chart(ctx, {
 popeyes.addEventListener('click', function(){
   let yo = myChart.config.data.datasets[0].data;
   console.log(yo);
-  for(let en in chartThis) {
-    if(en==='Popeyes'){
-      console.log('This from inside');
+  yo.push(rrr)
+  // for(let en in chartThis) {
+  //   if(en==='Popeyes'){
+  //     console.log('This from inside');
       
-    }
-    for(let jn in chartThis[en]) {
-      if(en=== 'Popeyes' && jn==='Salty'){
-        console.log('YEAH BOI');
-        console.log(`obj.${jn} = ${chartThis[en][jn]}`);
-        break;
-      }
+  //   }
+  //   for(let jn in chartThis[en]) {
+  //     if(en=== 'Popeyes' && jn==='Salty'){
+  //       console.log('YEAH BOI');
+  //       console.log(`obj.${jn} = ${chartThis[en][jn]}`);
+  //       break;
+  //     }
       
-      break;
-    }
-  }
+  //     break;
+  //   }
+  //}
   //console.log(yo)
   //console.log(yo)
 })
